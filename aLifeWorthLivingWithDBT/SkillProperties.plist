@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Core Mindfulness</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Wise Mind</string>
+				<key>Description</key>
+				<string>Wise mind is a balance between reasonable mind and emotional mind.</string>
+				<key>Exercise</key>
+				<string>What emotions do you feel? What do you logically perceive? Can you give equal weight to both experiences?</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Observe</string>
+				<key>Description</key>
+				<string>Judgements impede real observation. When observing the world around you and your own thoughts and emotions, also observe your judgements. Watch it as a train passing by. Do not get on the train.</string>
+				<key>Exercise</key>
+				<string>See things as they are. Focus on facts. Seperate yourself from your thoughts and emotions, so that you can observe them.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Emotion Regulation</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Observe and Describe</string>
+				<key>Description</key>
+				<string>When experiencing an emotion, take a moment to observe this sensation. Then, put a name on the emotion. This helps you from becoming your emotion.</string>
+				<key>Exercise</key>
+				<string>What emotion are you feeling right now? Why? Do you find yourself judging yourself for having this emotion or for its intensity? Can you observe then let go of this judgement?</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Mastery</string>
+				<key>Description</key>
+				<string>Increasing opportunities that create positive emotions is a very effective way to regulate your emotions. Activities that build mastery make you feel competent and in control. Try to do a mastery activity every day.</string>
+				<key>Exercise</key>
+				<string>What are you good at? What makes you feel capable, able, adept, proficient, or skillful?</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Distress Tolerance</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Temporarily Distract</string>
+				<key>Description</key>
+				<string>When feeling very strong distress it is sometimes a good idea to work hard at distracting yourself from your feelings temporarily. With time, all emotions become less intense.</string>
+				<key>Exercise</key>
+				<string>Practice this skill first with minor distress. Mindfully distract yourself from the emotion, and then in 2 hours or less bring your focus back to the distress.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Encouragement</string>
+				<key>Description</key>
+				<string>Encouragement is a powerful way to affect emotions. Practice becoming your own biggest cheerleader. What would you say to someone else who was in your exact situation?</string>
+				<key>Exercise</key>
+				<string>Imagine that you are another person talking to yourself. What would you say to make yourself feel better.</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Interpersonal Effectiveness</key>
+		<array>
+			<dict>
+				<key>Title</key>
+				<string>Project Confidence</string>
+				<key>Description</key>
+				<string>When asking for something or saying no to a request, it is helpful to exude confidence even when you don&apos;t feel it. Appearing confident will reinforce your position.</string>
+				<key>Exercise</key>
+				<string>What does it look like to be confident? Roll your shoulders up and back. Take a deep breath. Smile a little.</string>
+			</dict>
+			<dict>
+				<key>Title</key>
+				<string>Flexibility and Strength</string>
+				<key>Description</key>
+				<string>In interpersonal situations, focus on striking a balanced position that gives weight to the other person but also your own thoughts, opinions, and values.</string>
+				<key>Exercise</key>
+				<string>What skill do you think you need to work on? Do you think you need to be more flexible or be more assertive?</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

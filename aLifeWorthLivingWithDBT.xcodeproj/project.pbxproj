@@ -14,13 +14,19 @@
 		5A6B9CA2184BEF3100876D5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CA1184BEF3100876D5F /* main.m */; };
 		5A6B9CA6184BEF3100876D5F /* XYZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CA5184BEF3100876D5F /* XYZAppDelegate.m */; };
 		5A6B9CA9184BEF3100876D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B9CA7184BEF3100876D5F /* Main.storyboard */; };
-		5A6B9CAC184BEF3100876D5F /* XYZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CAB184BEF3100876D5F /* XYZViewController.m */; };
+		5A6B9CAC184BEF3100876D5F /* XYZSkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CAB184BEF3100876D5F /* XYZSkillViewController.m */; };
 		5A6B9CAE184BEF3200876D5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B9CAD184BEF3200876D5F /* Images.xcassets */; };
 		5A6B9CB5184BEF3200876D5F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6B9CB4184BEF3200876D5F /* XCTest.framework */; };
 		5A6B9CB6184BEF3200876D5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6B9C95184BEF3100876D5F /* Foundation.framework */; };
 		5A6B9CB7184BEF3200876D5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6B9C99184BEF3100876D5F /* UIKit.framework */; };
 		5A6B9CBF184BEF3200876D5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B9CBD184BEF3200876D5F /* InfoPlist.strings */; };
 		5A6B9CC1184BEF3200876D5F /* aLifeWorthLivingWithDBTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CC0184BEF3200876D5F /* aLifeWorthLivingWithDBTTests.m */; };
+		5A6B9CCC184C158800876D5F /* XYZDailyPracticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CCB184C158800876D5F /* XYZDailyPracticeViewController.m */; };
+		5A6B9CCF184C176100876D5F /* XYZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CCE184C176100876D5F /* XYZMainViewController.m */; };
+		5A6B9CD2184FB08200876D5F /* XYZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CD1184FB08200876D5F /* XYZTableViewController.m */; };
+		5A6B9CD4184FBC2600876D5F /* SkillProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A6B9CD3184FBC2600876D5F /* SkillProperties.plist */; };
+		5A6B9CD71851265800876D5F /* XYZModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CD61851265800876D5F /* XYZModuleViewController.m */; };
+		5A6B9CDA1851282600876D5F /* XYZSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6B9CD91851282600876D5F /* XYZSkill.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +51,25 @@
 		5A6B9CA4184BEF3100876D5F /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
 		5A6B9CA5184BEF3100876D5F /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
 		5A6B9CA8184BEF3100876D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5A6B9CAA184BEF3100876D5F /* XYZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZViewController.h; sourceTree = "<group>"; };
-		5A6B9CAB184BEF3100876D5F /* XYZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZViewController.m; sourceTree = "<group>"; };
+		5A6B9CAA184BEF3100876D5F /* XYZSkillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZSkillViewController.h; sourceTree = "<group>"; };
+		5A6B9CAB184BEF3100876D5F /* XYZSkillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZSkillViewController.m; sourceTree = "<group>"; };
 		5A6B9CAD184BEF3200876D5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A6B9CB3184BEF3200876D5F /* aLifeWorthLivingWithDBTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aLifeWorthLivingWithDBTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6B9CB4184BEF3200876D5F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5A6B9CBC184BEF3200876D5F /* aLifeWorthLivingWithDBTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "aLifeWorthLivingWithDBTTests-Info.plist"; sourceTree = "<group>"; };
 		5A6B9CBE184BEF3200876D5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A6B9CC0184BEF3200876D5F /* aLifeWorthLivingWithDBTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aLifeWorthLivingWithDBTTests.m; sourceTree = "<group>"; };
+		5A6B9CCA184C158800876D5F /* XYZDailyPracticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZDailyPracticeViewController.h; sourceTree = "<group>"; };
+		5A6B9CCB184C158800876D5F /* XYZDailyPracticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZDailyPracticeViewController.m; sourceTree = "<group>"; };
+		5A6B9CCD184C176100876D5F /* XYZMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZMainViewController.h; sourceTree = "<group>"; };
+		5A6B9CCE184C176100876D5F /* XYZMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZMainViewController.m; sourceTree = "<group>"; };
+		5A6B9CD0184FB08200876D5F /* XYZTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZTableViewController.h; sourceTree = "<group>"; };
+		5A6B9CD1184FB08200876D5F /* XYZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTableViewController.m; sourceTree = "<group>"; };
+		5A6B9CD3184FBC2600876D5F /* SkillProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SkillProperties.plist; sourceTree = "<group>"; };
+		5A6B9CD51851265800876D5F /* XYZModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZModuleViewController.h; sourceTree = "<group>"; };
+		5A6B9CD61851265800876D5F /* XYZModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZModuleViewController.m; sourceTree = "<group>"; };
+		5A6B9CD81851282600876D5F /* XYZSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZSkill.h; path = ../XYZSkill.h; sourceTree = "<group>"; };
+		5A6B9CD91851282600876D5F /* XYZSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZSkill.m; path = ../XYZSkill.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +129,22 @@
 		5A6B9C9B184BEF3100876D5F /* aLifeWorthLivingWithDBT */ = {
 			isa = PBXGroup;
 			children = (
+				5A6B9CD81851282600876D5F /* XYZSkill.h */,
+				5A6B9CD91851282600876D5F /* XYZSkill.m */,
 				5A6B9CA4184BEF3100876D5F /* XYZAppDelegate.h */,
 				5A6B9CA5184BEF3100876D5F /* XYZAppDelegate.m */,
 				5A6B9CA7184BEF3100876D5F /* Main.storyboard */,
-				5A6B9CAA184BEF3100876D5F /* XYZViewController.h */,
-				5A6B9CAB184BEF3100876D5F /* XYZViewController.m */,
+				5A6B9CD51851265800876D5F /* XYZModuleViewController.h */,
+				5A6B9CD61851265800876D5F /* XYZModuleViewController.m */,
+				5A6B9CCD184C176100876D5F /* XYZMainViewController.h */,
+				5A6B9CCE184C176100876D5F /* XYZMainViewController.m */,
+				5A6B9CCA184C158800876D5F /* XYZDailyPracticeViewController.h */,
+				5A6B9CCB184C158800876D5F /* XYZDailyPracticeViewController.m */,
+				5A6B9CAA184BEF3100876D5F /* XYZSkillViewController.h */,
+				5A6B9CAB184BEF3100876D5F /* XYZSkillViewController.m */,
+				5A6B9CD3184FBC2600876D5F /* SkillProperties.plist */,
+				5A6B9CD0184FB08200876D5F /* XYZTableViewController.h */,
+				5A6B9CD1184FB08200876D5F /* XYZTableViewController.m */,
 				5A6B9CAD184BEF3200876D5F /* Images.xcassets */,
 				5A6B9C9C184BEF3100876D5F /* Supporting Files */,
 			);
@@ -232,6 +260,7 @@
 				5A6B9CAE184BEF3200876D5F /* Images.xcassets in Resources */,
 				5A6B9CA0184BEF3100876D5F /* InfoPlist.strings in Resources */,
 				5A6B9CA9184BEF3100876D5F /* Main.storyboard in Resources */,
+				5A6B9CD4184FBC2600876D5F /* SkillProperties.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A6B9CAC184BEF3100876D5F /* XYZViewController.m in Sources */,
+				5A6B9CAC184BEF3100876D5F /* XYZSkillViewController.m in Sources */,
+				5A6B9CD2184FB08200876D5F /* XYZTableViewController.m in Sources */,
+				5A6B9CCF184C176100876D5F /* XYZMainViewController.m in Sources */,
 				5A6B9CA6184BEF3100876D5F /* XYZAppDelegate.m in Sources */,
+				5A6B9CD71851265800876D5F /* XYZModuleViewController.m in Sources */,
+				5A6B9CCC184C158800876D5F /* XYZDailyPracticeViewController.m in Sources */,
 				5A6B9CA2184BEF3100876D5F /* main.m in Sources */,
+				5A6B9CDA1851282600876D5F /* XYZSkill.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
