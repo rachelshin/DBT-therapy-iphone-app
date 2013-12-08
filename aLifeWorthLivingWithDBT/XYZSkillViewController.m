@@ -10,23 +10,22 @@
 
 @interface XYZSkillViewController ()
 
+@property (nonatomic, weak) IBOutlet UILabel *descriptionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *exerciseLabel;
+
 @end
 
-@implementation XYZSkillViewController
 
-// UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
-// [infoButton addTarget:self action:@selector(infoButtonAction) forControlEvents:UIControlEventTouchUpInside];
-// UIBarButtonItem *modalButton = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
-// [self.navigationItem setLeftBarButtonItem:modalButton animated:YES];
-// [modalButton release];
+@implementation XYZSkillViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
- //   self.descriptionLabel.text = self.skill.description;
- //   self.title = self.skill.title;
+    // set information based on skill's dictionary
+    self.navigationItem.title = [self.viewData.skillDetails objectForKey:@"Title"];
+    self.descriptionLabel.text = [self.viewData.skillDetails objectForKey:@"Description"];
+    self.exerciseLabel.text = [self.viewData.skillDetails objectForKey:@"Exercise"];
 }
 
 - (void)didReceiveMemoryWarning

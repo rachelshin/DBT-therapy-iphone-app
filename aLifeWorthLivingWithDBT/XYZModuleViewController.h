@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYZSkill.h"
 
-extern NSArray *categoryArray;
 
 @interface XYZModuleViewController : UITableViewController
 
+// skills associated with the selected module
+@property XYZSkill *skillData;
+
+@property NSString *moduleNameString;
 
 @end

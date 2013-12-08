@@ -10,7 +10,6 @@
 
 @interface XYZDailyPracticeViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIDatePicker *scheduledTime;
-- (IBAction)setActionClicked:(id)sender;
+@property (strong, nonatomic) UILocalNotification *reminder;
 
 @end

@@ -12,7 +12,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     return YES;
 }
 							
@@ -46,14 +45,49 @@
 // presents alert message from local notification reminder
 - (void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
-    // create alert and show
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:notification.alertAction message:notification.alertBody delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:@"More", nil];
-    [alertView show];
-}
+    // create array of module names
+    self.modules = [[NSArray alloc]initWithObjects:cmString, erString, dtString, ieString, nil];
+    
+    // choose a random module
+    NSInteger random = arc4random() % [self.modules count];
+    NSString *key = [self.modules objectAtIndex:random];
+    
+    // pulled from https://developer.apple.com/library/mac/documentation/cocoa/conceptual/PropertyLists/QuickStartPlist/QuickStartPlist.html
+    
+    NSString *errorDesc = nil;
+    NSPropertyListFormat format;
+    NSString *plistPath;
+    NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                              NSUserDomainMask, YES) objectAtIndex:0];
+    plistPath = [rootPath stringByAppendingPathComponent:@"SkillProperties.plist"];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:plistPath]) {
+        plistPath = [[NSBundle mainBundle] pathForResource:@"SkillProperties" ofType:@"plist"];
+    }
+    NSData *plistXML = [[NSFileManager defaultManager] contentsAtPath:plistPath];
+    NSDictionary *tempDict = (NSDictionary *)[NSPropertyListSerialization propertyListFromData:plistXML mutabilityOption:NSPropertyListMutableContainersAndLeaves format:&format errorDescription:&errorDesc];
+    if (!tempDict) {
+        NSLog(@"Error reading plist: %@, format: %d", errorDesc, format);
+    }
+    
+    // create array of dictionaries from key, which is a random module
+    NSArray *dictArray = [[NSArray alloc] init];
+    dictArray = [tempDict objectForKey:key];
 
-- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-//    UIViewController *ui =
-//    [
+    // get random number for index of one skill
+    NSInteger skillRandom = arc4random() % [dictArray count];
+
+    // index into correct dictionary
+    NSDictionary *skillInfo = [[NSDictionary alloc]init];
+    skillInfo = [dictArray objectAtIndex:skillRandom];
+
+    // pull title and exercise from skill
+    NSString *title = [skillInfo objectForKey:@"Title"];
+    NSString *body = [skillInfo objectForKey:@"Exercise"];
+
+
+    // create alert and show
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:body delegate:self cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    [alertView show];
 }
 
 @end

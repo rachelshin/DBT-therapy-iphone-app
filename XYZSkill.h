@@ -8,14 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XYZSkill : NSObject{
-    NSString *title;
-    NSString *description;
-    NSString *exercise;
-}
+@interface XYZSkill : NSObject
 
-@property (copy, nonatomic) NSString *title;
-@property (copy, nonatomic) NSString *description;
-@property (copy, nonatomic) NSString *exercise;
+// array of all skills within one module
+@property (strong, nonatomic) NSMutableArray *moduleSkillsArray;
+
+- (id) initWithKey:(NSString *) key;
 
 @end

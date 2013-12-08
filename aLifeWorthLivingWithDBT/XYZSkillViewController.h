@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "XYZSkill.h"
+#import "XYZSkillDetail.h"
 
 @interface XYZSkillViewController : UIViewController
 
-@property (nonatomic, weak) IBOutlet UILabel *descriptionLabel;
-@property (weak, nonatomic) IBOutlet UILabel *exerciseLabel;
-//@property (nonatomic, strong) Skill *skill;
-
+// data for the view
+@property XYZSkillDetail *viewData;
 
 @end

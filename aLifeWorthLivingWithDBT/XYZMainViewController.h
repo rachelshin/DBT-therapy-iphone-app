@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYZSkill.h"
+
+// module titles, global variable
+extern NSString *cmString;
+extern NSString *erString;
+extern NSString *dtString;
+extern NSString *ieString;
+
 
 @interface XYZMainViewController : UITableViewController
 
-@property (copy, nonatomic) NSArray *skillProperties;
-
-extern NSArray *categoryArray;
+@property NSArray *moduleNames;
 
 @end
